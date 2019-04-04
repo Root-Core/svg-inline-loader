@@ -60,7 +60,7 @@ function SVGInlineLoader(content) {
     this.cacheable && this.cacheable();
     this.value = content;
     // Configuration
-    var query = loaderUtils.parseQuery(this.query);
+    var query = loaderUtils.parseQuery(this.query.toString());
 
     var exportsString = "module.exports = ";
     if (query.exportAsDefault) {
